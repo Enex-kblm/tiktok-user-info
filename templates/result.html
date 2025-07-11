@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head><title>Hasil Pencarian</title></head>
+<body>
+  {% if info.get("error") %}
+    <h3>❌ {{ info["error"] }}</h3>
+    <a href="/">Kembali</a>
+  {% else %}
+    <h2>Profil: @{{ info['unique_id'] }}</h2>
+    <p>Nama: {{ info['nickname'] }}</p>
+    <p>Followers: {{ info['followers'] }}</p>
+    <p>Following: {{ info['following'] }}</p>
+    <p>Likes: {{ info['likes'] }}</p>
+    <p>Video: {{ info['videos'] }}</p>
+    <p>Region: {{ info['region'] }}</p>
+    <p>Bio: {{ info['signature'] }}</p>
+    <p><a href="https://www.tiktok.com/@{{ info['unique_id'] }}" target="_blank">🔗 Lihat di TikTok</a></p>
+    <a href="/">🔙 Cari Lagi</a>
+  {% endif %}
+</body>
+</html>
