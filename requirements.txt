@@ -1,5 +1,6 @@
-fastapi
-jinja2
-uvicorn
-beautifulsoup4
-requests
+fastapi==0.104.1
+jinja2==3.1.2
+uvicorn==0.24.0
+beautifulsoup4==4.12.2
+requests==2.31.0
+python-multipart==0.0.6
